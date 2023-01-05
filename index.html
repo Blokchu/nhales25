@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<title>Welkom</title>
+<script src="http://code.jquery.com/jquery-3.1.0.min.js">
+</script>
+<script src="http://code.jquery.com/ui/1.12.0/jquery-ui.min.js">
+</script>
+<link rel="stylesheet"
+href="http://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+<script>
+$(function() {
+$("#accordion").accordion();
+});
+</script>
+<script>
+    <!--
+    function drukknop() {
+    window.alert("Hartelijk bedankt voor het drukken op de knop!");
+    }
+    -->
+    </script>
+    <script>
+        $(document).ready(function() {
+        $("#knop").click(function() {
+        var naam = $("#idnaam").val();
+        var woonplaats = $("#idwoonplaats").val();
+        var leeftijd = $("#idleeftijd").val();
+        window.alert(
+        "Ik ben " + naam +
+        ", ik ben " + leeftijd +
+        " jaar en ik kom uit " + woonplaats );
+        });
+        });
+        </script>
+</head>
+<body>
+    <div id="accordion">
+        <h3>Welkom</h3>
+        <div>
+        <p>
+            <input type="button" name="knop"
+value="Druk op deze knop" onClick="drukknop()">
+        </p>
+        </div>
+        <h3>Lorem Ipsum</h3>
+        <div>
+        <p>Aenean mollis porttitor maximus. Mauris ac mi commodo, tincidunt neque ut, aliquam augue. Curabitur pharetra, odio ut feugiat mollis, massa ipsum lacinia ipsum, quis faucibus nunc nulla vel justo. Praesent eget est elit. Vestibulum felis magna, dapibus sagittis consequat a, varius et massa. Etiam sed vestibulum lacus. Nullam vulputate lobortis augue a pharetra. Phasellus blandit purus nec ligula ultricies, id volutpat diam consequat. Quisque venenatis nulla at mauris tempor, id aliquam nulla pretium. Nam ac dui id dolor pellentesque tincidunt. Donec efficitur faucibus sagittis. Nam commodo, massa eu pellentesque faucibus, nisl est facilisis sapien, eu ultricies tortor orci et metus. Fusce vestibulum augue sed lectus sagittis, sit amet finibus nunc pharetra. Sed urna enim, auctor vitae metus ac, iaculis scelerisque quam.</p>
+        </div>
+        <h3>Formulier</h3>
+        <div>
+            <form>
+            Wat is uw naam?
+            <input type="text" id="idnaam"><br><br>
+            Waar woont u?
+            <input type="text" id="idwoonplaats"><br><br>
+            Hoe oud bent u?
+            <input type="text" id="idleeftijd"><br><br>
+            <input id="knop" name="knop" type="button"
+            value="Verstuur">
+            </form>
+        </div>
+        </div>
+        <noscript>
+        Om deze website optimaal te gebruiken is het noodzakelijk om JavaScript te activeren.
+        </noscript>
+    </body>
+    </html>
